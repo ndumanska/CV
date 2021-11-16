@@ -1,0 +1,275 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #485268;
+  background-color: #e5e5e5;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.page {
+  max-width: 595px;
+  margin: auto;
+}
+
+/* #region about*/
+.about__photo {
+  width: 114px;
+  height: 114px;
+  border-radius: 50%;
+  margin-left: 50px;
+}
+
+.about {
+  display: flex;
+  padding-top: 32px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 24px;
+  background-color: #18878c;
+  color: white;
+}
+
+.about__name {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.about__role {
+  margin: 0 0 8px 0;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.about__text {
+  margin: 0;
+}
+/* #endregion */
+
+.main {
+  padding: 0 40px;
+  background-color: white;
+}
+
+/* #region contacts */
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+  flex-wrap: wrap;
+}
+
+.contacts__link {
+  color: #485268;
+  text-decoration: none;
+}
+
+.contacts__link:hover {
+  color: #e56220;
+}
+/* #endregion */
+
+/* #region info */
+
+.info {
+  border-top: 1px solid #dee2ed;
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.info__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #18878c;
+}
+
+.info__content {
+  width: 360px;
+}
+
+.info-experience {
+  padding-bottom: 50px;
+}
+
+/* #endregion */
+
+/* #region job */
+.job {
+  margin-top: 24px;
+  border-left: 1px dashed #dee2ed;
+  padding-left: 8px;
+}
+
+.job:first-child {
+  margin-top: 0;
+}
+
+.job__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 15px;
+  text-transform: capitalize;
+}
+
+.job__description {
+  margin: 0;
+  margin-top: 8px;
+}
+/* #endregion */
+
+/* #region study */
+
+.study {
+  margin-top: 6px;
+  border-left: 1px dashed #dee2ed;
+  padding-left: 8px;
+}
+
+.job:first-child {
+  margin-top: 0;
+}
+
+.study__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 15px;
+  text-transform: capitalize;
+}
+
+.study__description {
+  margin: 0;
+  margin-top: 8px;
+}
+/* #endregion */
+
+/* #region skills */
+.skills {
+  display: flex;
+}
+
+.skills__list {
+  box-sizing: border-box;
+  width: 50%;
+  margin: 0;
+  border-left: 1px dashed #dee2ed;
+  padding-left: 8px;
+  list-style: none;
+}
+
+.skills__item {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  align-items: center;
+}
+
+.skills__item:first-child {
+  margin-top: 0;
+}
+/* #endregion */
+
+/* #region tools */
+.tools {
+  display: flex;
+}
+
+.tools__list {
+  box-sizing: border-box;
+  width: 50%;
+  margin: 0;
+  border-left: 1px dashed #dee2ed;
+  padding-left: 8px;
+  list-style: none;
+}
+
+.tools__item {
+  margin-top: 8px;
+}
+
+.tools__item:first-child {
+  margin-top: 0;
+}
+/* #endregion */
+
+.progress {
+  background-color: #dee2ed;
+  width: 50%;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 10px;
+}
+
+.percent {
+  background-color: #18878c;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.native {
+  width: 100%;
+}
+
+.advanced {
+  width: 90%;
+}
+
+.basic {
+  width: 75%;
+}
+
+.experience__content {
+  max-height: 330px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.show {
+  max-height: 1000px;
+}
+
+.btn {
+  position: absolute;
+  bottom: 20px;
+  background-color: #18878c;
+  border: navajowhite;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  max-width: 100px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.btn-less {
+  display: none;
+}
+
+.opened .btn-less {
+  display: inline-block;
+}
+
+.opened .btn-more {
+  display: none;
+}
+
+.btn:hover {
+  border-radius: 5px;
+  background-color: #135154;
+}

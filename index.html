@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natalia's CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="page">
+        <header class="about">
+            <div>
+                <h1 class="about__name">Natalia Dumanska</h1>
+                <div class="about__role">CONTENT MARKETING MANAGER | ODESA</div>
+                <p class="about__text">
+                    I’m a goal-oriented, creative and self-motivated content marketer who's dreaming to start a career
+                    as a web developer specializing in front-end.
+                    I have a basic knowledge of CSS/HTML, and recently started learning JS.
+                    I'm a quick and eager learner who's not intimidated by challenges.
+                </p>
+            </div>
+            <img class="about__photo" src="photo.jpg" alt="Natalia Dumanska">
+        </header>
+        <main class="main">
+            <section class="contacts">
+                <a class="contacts__link" href="tel:+380636622997">+380636622997</a>
+                <a class="contacts__link" href="mailto:dumanskayaaa13@gmail.com">dumanskayaaa13@gmail.com</a>
+                <a class="contacts__link" href="https://t.me/dumanskayaaa">Telegram</a>
+            </section>
+            <section class="info info-experience">
+                <h2 class="info__title">Experience</h2>
+                <div id="overflow" class="info__content experience__content">
+                    <article class="job">
+                        <h3 class="job__title">Who's Mailing What! | 2020 - Present</h3>
+                        <p class="job__description"><strong>Position</strong>: Content Marketing Manager</p>
+                        <p class="job__description"><strong>My responsibilities</strong>:
+                        <ul>
+                            <li>Creating and managing editorial plans and calendars;</li>
+                            <li> Conducting research and competitor analysis;</li>
+                            <li> Editing, designing, and publishing blog articles;</li>
+                            <li> Publishing and promoting content on social media;</li>
+                            <li> Collaborating with designers and developers on creating landing pages;</li>
+                            <li> Managing copywriting team;</li>
+                        </ul>
+                        </p>
+                    </article>
+                    <article class="job">
+                        <h3 class="job__title">Devellux | 2020 - 2020</h3>
+                        <p class="job__description"><strong>Position</strong>: Copywriter</p>
+                        <p class="job__description"><strong>My responsibilities</strong>:
+                        <ul>
+                            <li> Writing educational SEO articles for different platforms;</li>
+                            <li> Conducting research and competitor analysis;</li>
+                        </ul>
+                        </p>
+                    </article>
+                    <article class="job">
+                        <h3 class="job__title">English Tutor, self-employed | 2016 - 2020</h3>
+                        <p class="job__description"><strong>Position</strong>: English Tutor</p>
+                        <p class="job__description"><strong>My responsibilities</strong>:
+                        <ul>
+                            <li> Planning, preparing and delivering lessons for kids and adults; </li>
+                            <li> Preparing teaching materials according to student`s needs and level;</li>
+                            <li> Delivering lessons in Skype;</li>
+                        </ul>
+                        </p>
+                    </article>
+                </div>
+                <button id="btn" onclick="showMoreFunc()" class="btn">Show <span class="btn-more">more</span> <span class="btn-less">less</span></button>
+            </section>
+            <section class="info">
+                <h2 class="info__title">Education</h2>
+                <div class="info__content">
+                    <article class="study">
+                        <h3 class="study__title">Kyiv Natonal Linguistic University | 2015 - 2019</h3>
+                        <p class="study__description">Bachelor's degree, Germanic Languages, Literatures, and
+                            Linguistics</p>
+                    </article>
+                </div>
+            </section>
+            <section class="info">
+                <h2 class="info__title">Skills</h2>
+                <div class="info__content">
+                    <div class="skills">
+                        <ul class="skills__list">
+                            <li class="skills__item">Content marketing</li>
+                            <li class="skills__item">Copywriting</li>
+                            <li class="skills__item">SEO</li>
+                        </ul>
+                        <ul class="skills__list">
+                            <li class="skills__item">HTML</li>
+                            <li class="skills__item">CSS</li>
+                            <li class="skills__item">Javascript</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="info">
+                <h2 class="info__title">Tools</h2>
+                <div class="info__content">
+                    <div class="tools">
+                        <ul class="tools__list">
+                            <li class="tools__item">Google Analytics</li>
+                            <li class="tools__item">WordPress</li>
+                            <li class="tools__item">Semrush</li>
+                        </ul>
+                        <ul class="tools__list">
+                            <li class="tools__item">Figma</li>
+                            <li class="tools__item">VSCode</li>
+                            <li class="tools__item">Git</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="info">
+                <h2 class="info__title">Languages</h2>
+                <div class="info__content">
+                    <div class="skills">
+                        <ul class="skills__list">
+                            <li class="skills__item"><span>Russian</span>
+                                <div class="progress">
+                                    <div class="percent native"></div>
+                                </div>
+                            </li>
+                            <li class="skills__item"><span>Ukrainian</span>
+                                <div class="progress">
+                                    <div class="percent native"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="skills__list">
+                            <li class="skills__item"><span>English</span>
+                                <div class="progress">
+                                    <div class="percent advanced"></div>
+                                </div>
+                            </li>
+                            <li class="skills__item"><span>Spanish</span>
+                                <div class="progress">
+                                    <div class="percent basic"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
